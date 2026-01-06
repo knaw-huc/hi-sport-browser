@@ -4,7 +4,7 @@ CREATE SCHEMA api;
 
 
 CREATE MATERIALIZED VIEW api.vereniging AS
-    SELECT *,sporten
+    SELECT *
     FROM public.vereniging_vereniging
     JOIN (select vereniging,array_agg(soort_sport) as sporten from vereniging_sport group by vereniging) AS soort_sport
      ON soort_sport.vereniging = vereniging_vereniging.id
