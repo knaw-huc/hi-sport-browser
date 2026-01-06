@@ -1,2 +1,2 @@
 # hi-sport-browser
-Browser for the Sport darabase
+Browser for the Sport database
